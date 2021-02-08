@@ -1,23 +1,29 @@
 body{
+    margin: 0;
     background-color: hsl(218, 28%, 13%);
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    background-position: center bottom;   
+ 
 }
 
-* {
-    padding: 0;
-    margin: 0;
-  }
+*,*::before {
+  box-sizing: border-box; }
+
+
 
 .section {
-        width: 90%;
+        max-width: 1440px;
+        max-width: var(--grid-width);
         margin: 0 auto;
+        padding-right: 2rem;
+          padding-left: 2rem;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;     
 }
 
-.section {
+/*.section {
   width: 90%;
   margin: 0 auto;
   -webkit-box-pack: center;
@@ -79,7 +85,7 @@ header .navbar .box-flex .nav-link ul li {
   }
 
   .file-box img{
-    width: 100%;
+    width: 40%;
   }
 
   .file-box h1 {
@@ -107,6 +113,15 @@ header .navbar .box-flex .nav-link ul li {
     background-color: #65e2d9;
     color: white;
   }
+
+
+  .btn:hover {
+    opacity: 0.7;
+  }
+.intro bg-curvy{
+  background-color: #1c2431;
+}
+
 /*Features*/
 .features {
   text-align: center;
@@ -144,11 +159,13 @@ header .navbar .box-flex .nav-link ul li {
 
 }
 .productive-box .flex-image-box .flex-content p {
+  display: block;
   color: rgba(255, 255, 255, 0.8);
+
 }
 
 .productive-box .flex-image-box .flex-content .box-link {
-  color: #65e2d9;
+  /*color: #65e2d9;
   margin: 15px 0;
   padding: 5px 0;
   display: flex;
@@ -157,7 +174,11 @@ header .navbar .box-flex .nav-link ul li {
   border-bottom: 1px solid #65e2d9;
   width: 90px;
   font-size: 10px;
-  align-;
+  */
+  color: hsl(176, 68%, 64%);
+    line-height: 1em;
+    text-decoration: underline;
+    
 }
 .productive-box .flex-image-box .flex-content .box-link img {
 width: 15px;
@@ -213,6 +234,7 @@ flex-direction: column;
   content: url(/images/bg-quotes.png);
   top: -45px;
   left: 0;
+  z-index: -1;
   position: absolute;
 }
 
@@ -247,6 +269,12 @@ flex-direction: column;
 
 .sign-in .subscription-input {
   position: relative;
+  /*width: 100%;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 20px;
+  text-align: center;
+ */
 }
 
 .sign-in .subscription-input .input-mail{
@@ -254,13 +282,26 @@ flex-direction: column;
   border-radius: 25px;
   padding: 15px 15px;
   font-size: 14px;
-  text-align: left;
-  width: calc(100% - 30px);
+  width: calc(100% - 10px);
 }
 .sign-in .subscription-input .btn {
-  width: 100%;
+ /* margin: auto;
+  margin-top: 1.5em;
   background-color: cadetblue;
-}
+  padding: 20px 50px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  */
+    width: 200px;
+    padding: 20px 10px;
+    background-color: #65e2d9;
+    color: white;
+  }
+  .subscription .subs-input .btn-subs {
+    width: 100%;
+  }
 /*Footer*/
 footer {
   background-color: #0b1523;
@@ -269,6 +310,9 @@ footer {
 }
 footer .footer-box {
   padding: 15px 0;
+}
+.footer-contact{
+ margin: 0; 
 }
 
 footer .footer-box .footer-content-box {
@@ -294,8 +338,18 @@ footer .footer-box ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
+.social-media i {
+  font-size: 1.5em;
+  margin-left: 0.5em;
+  color:rgba(255, 255, 255, 0.8);
+}
 
-footer .footer-box .social-inline {
+.social-media i:hover {
+  opacity: 0.8;
+  color: cadetblue;
+}
+
+/*footer .footer-box .social-inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,7 +396,7 @@ footer .footer-box .social-inline .social-circle img {
     width: 80%;
   }
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
   header .file-box img {
     width: 60%;
@@ -411,7 +465,7 @@ footer .footer-box .social-inline .social-circle img {
     margin: 0 auto;
     padding-bottom: 45px;
   }
-  .sign-in .subsscription-box .subscription-input {
+  .sign-in .subscription-box .subscription-input {
     width: calc(80% - 30px);
     display: -ms-grid;
     display: grid;
@@ -428,6 +482,10 @@ footer .footer-box .social-inline .social-circle img {
   }
   .sign-in .subscription-box .subscription-input .btn-subs {
     margin: 0;
+  }
+  .sign-in .subscription-input { 
+  display: flex;
+  flex-direction: column;
   }
   footer .footer-flex {
     display: -ms-grid;

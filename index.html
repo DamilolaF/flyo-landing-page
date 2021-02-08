@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
@@ -25,6 +26,7 @@
 <body>
   <header>
     <div class="section">
+      <div class="intro-bg-curvy">
       <nav class="navbar">
         <div class="box-flex">
         <div class="logo">
@@ -37,18 +39,24 @@
             <li><a href="#sign-in">Sign In</a></li>
           </ul>
           </div>
+        </nav>
       </div>
-    </nav>
+      </div>
   </header>
 <div class="file-box ">
+  <div class="intro-file-box">
+    <div class="file-image">
   <img src="/images/illustration-intro.png" alt="illustration-intro">
-    <h1>All your files in one secure location, accessible anywhere.</h1>
+    </div>
+  <h1>All your files in one secure location, accessible anywhere.</h1>
   
   <p>Fylo stores all your most important files in one secure location. Access them wherever 
   you need, share and collaborate with friends family, and co-workers.</p>
 
   <button class="btn btn-first">Get Started</button> 
   </div>
+</div>
+
 <main>
   <div class="features">
   <div class="section">
@@ -175,7 +183,7 @@
   <div class="section">  
     <img src="/images/logo.svg" alt="logo">
     <div class="footer-flex">
-      <div class="footer-box-">
+      <div class="footer-box">
      <div class="footer-content-box">
       <div class="footer-icon">
         <img src="/images/icon-location.svg" alt="icon-location">
@@ -189,8 +197,9 @@
 <div class="footer-box">
 <div class="footer-content-box">
   <div class="footer-icon">
-    <img src="/images/icon-phone.svg" alt="phone">
+    <img src="./images/icon-phone.svg" alt="phone">
   </div> 
+  <div class="footer-contact">
   <div class="footer-content">
   +1-543-123-4567
   </div>
@@ -199,10 +208,11 @@
   <div class="footer-box">
   <div class="footer-content-box">
     <div class="footer-icon">
-      <img src="/images/icon-email.svg" alt="email">
+      <img src="./images/icon-email.svg" alt="email">
     </div> 
     <div class="footer-content">
-  example@fylo.com
+  example@fylo.
+  </div>
     </div>
   </div> 
   </div>
@@ -224,7 +234,7 @@
   </ul>
 </div>
 
-<div class="footer-box">
+<!--<div class="footer-box">
   <div class="social-inline">
     <div class="social-circle">
       <img src="/images/facebook-f-brands.svg" alt="facebook-f-brands">
@@ -234,6 +244,12 @@
     </div>
     <div class="social-circle">
       <img src="/images/instagram-brands.svg" alt="instagram-f-brands">
+    -->
+    <div class="social-media">
+      <a href=""><i class="fa fa-facebook-f"></i></a>
+      <a href=""><i class="fa fa-github"></i></a>
+      <a href=""><i class="fa fa-google"></i></a>
+    </div>
     </div>
   </div>
 </div>
