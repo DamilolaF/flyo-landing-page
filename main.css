@@ -110,7 +110,7 @@ header .navbar .box-flex .nav-link ul li {
   }
   .btn-first {
     padding: 20px 100px;
-    background-color: #65e2d9;
+    background-color:  hsl(198, 60%, 50%);
     color: white;
   }
 
@@ -175,7 +175,7 @@ header .navbar .box-flex .nav-link ul li {
   width: 90px;
   font-size: 10px;
   */
-  color: hsl(176, 68%, 64%);
+  color:  hsl(198, 60%, 50%);;
     line-height: 1em;
     text-decoration: underline;
     
@@ -296,7 +296,7 @@ flex-direction: column;
   */
     width: 200px;
     padding: 20px 10px;
-    background-color: #65e2d9;
+    background-color:  hsl(198, 60%, 50%);
     color: white;
   }
   .subscription .subs-input .btn-subs {
@@ -349,46 +349,6 @@ footer .footer-box ul li a {
   color: cadetblue;
 }
 
-/*footer .footer-box .social-inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-footer .footer-box .social-inline .social-circle {
-  border-radius: 50%;
-  border: 1px solid #fff;
-  align-items: center;
-  padding: 5px;
-  margin: 15px;
-  color: white;
-  border: 1px solid #ebfbff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  text-decoration: none;
-  width: 40px;
-  height: 40px;
-}
-
-footer .footer-box .social-inline .social-circle img {
-  width: 13px;
-  color: white;
-}
 
 /*Media Query*/
 @media only screen and (min-width: 900px) {
